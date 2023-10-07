@@ -1,5 +1,5 @@
-body{
-    margin: 0px;
+ body{
+   margin-top:-18px;
 }
 section:nth-child(2n){
    background-color: rgb(243, 235, 241);
@@ -7,54 +7,76 @@ section:nth-child(2n){
 section:nth-child(2n+12){
    background-color: white;
 }
-#body-header{
-    height: 65vh;
-    background-image: url("macbook_mouse.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment:   fixed;
-    
-     /* background-repeat:no-repeat ; */
+ 
+#nav{
+   background-color:rgb(11, 11, 110);
+   width: 100%;
+   height:40px;
+   position: fixed;
+    top: 0px;
+    z-index: 1;
 }
-#body-header p{
-   color: aliceblue;
-    text-align: center;
-    margin-top: 60px;
-    font-size: 80px;
-   
-    opacity: .6;
+#navlist {
+   text-align: center;
 }
-li{
-   color: aliceblue;
-    display: inline-block;
-    margin-right: 30px;
-   
+#navlist li{
+   display: inline-block;
+   margin-right: 30px;
 }
- ul{
-    text-align: center;
-    
- }
- a{
-    color: white;
-    text-decoration: none;
-   }
-    #ullist a:hover{
-      color: rgb(48, 121, 230);
-      border-bottom: 2px rgb(0, 30, 255) solid;
-      transition: color .5s;
-      transition: border .5s;
-      
-   }
-#media  {
-   
-  margin-top: -50px;
-  /* color: rgb(23, 37, 188); */
-  
-}
-#media i  {
-   color: #557bb0;
+ 
+#nav a{
+   color: white;
+   text-decoration: none;
+   position: relative;
+   top: -5px;
   }
-#media a:hover{
+  #nav a:hover{
+   color: rgb(48, 121, 230);
+   border-bottom: 2px rgb(0, 30, 255) solid;
+   transition: color .5s;
+   transition: border .5s;
+   
+}
+#headerdiv{
+   height: 65vh;
+   background-image: url("um.webp");
+   background-size: cover;
+   background-position: center;
+  
+   position: relative;
+    
+    
+   
+    /* background-repeat:no-repeat ; */
+}
+#headerdiv div{
+   position: relative;
+   top: 40px;
+
+}
+
+
+#headerdiv ul{
+   text-align: center;
+}
+#headerdiv li{
+   text-align: center;
+   display: inline-block;
+   margin-right: 30px;
+
+}
+#headerdiv p{
+   color: aliceblue;
+   text-align: center;
+   margin-top: 40px;
+   font-size: 80px;
+   opacity: .6;
+
+}
+#headerdiv i  {
+   color:white;
+  }
+  #headerdiv a:hover{
    border-radius: 30%;
    box-shadow:0px 0px 6px 4px lightgrey ;
    transition: color .5s;
@@ -62,28 +84,31 @@ li{
    padding: 10px;
 }
 
-#divimg{
-      display: flex;
-      justify-content: center;
-   }
-   #about img{
-       
+ 
+  
+ 
+#about img{
+      position: relative;
+      top:-80px;
       border: 1px  white solid;
       border-radius: 120px;
-      margin-top: -100px;
+       
    }
 .para{
+   position: relative;
+   top:-80px;
    width: 50%;
+   font-size:30px ;
    min-width: 450px;
    text-align: justify;
+    
+   color: rgb(99, 99, 105);
    margin: auto;
 }
 .sec-heading{
    color: #325d9a;
 }
-.mp75px{
-   margin-bottom: 25px;
-}
+ 
 section{
    /* height: 300px; */
    display: flex;
@@ -164,49 +189,13 @@ section{
    color: aliceblue;
    margin-left: 8px;
 }
-.timeline{
-   position: relative;
-   width: 75%;
-   height: auto;
-   border: #2a69c2 2px solid;
-   }
  
  
-.timeline-box {
-    
-   width: 40%;
-   border: black 1px solid;
-   min-height: 150px;
-   position: relative;
-   left: 5%;
-   top: 15px;
-   text-align: right;
-}
-.timeline-box:nth-child(2n) {
-   left: 53%;
-}
-#timeline-divider {
-   position: sticky;
-   width: 0;
-   margin-top: -460px;
-   
-   left: 50%;
-   border: 1px dashed #0096fa6b;
-   height: 500px;
-   color: #433E3F;
-}
-#timeline-divider .timeline-traveller {
-   position: sticky;
-   top: 135px;
-   z-index: 2;
-}
-
-#timeline-divider i {
-   transform: rotate(90deg);
-   /* margin-top: -35px; */
-   display: block;
-   color: #2857a4;
-}
+ 
+ 
+ 
+ 
+ 
 #portfolio-container {
    box-sizing: border-box;
    display: flex;
@@ -351,7 +340,16 @@ textarea {
    padding: 10px 14px 20px 10px;
 
 }
+.horizontal-list li{
+   display: inline-block;
+   color:white;
 
+}
+.horizontal-list i{
+    
+   color:white;
+
+}
 input:focus,
 select:focus,
 textarea:focus,
